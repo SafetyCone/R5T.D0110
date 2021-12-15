@@ -7,8 +7,8 @@ using R5T.T0064;
 namespace R5T.D0110
 {
     [ServiceDefinitionMarker]
-    public interface ISummaryFilePathProvider : IServiceDefinition
+    public interface ISummaryFileNameProvider : IServiceDefinition
     {
-        Task<string> GetSummaryFilePath();
+        Task<string> GetSummaryFileName();
     }
 }
