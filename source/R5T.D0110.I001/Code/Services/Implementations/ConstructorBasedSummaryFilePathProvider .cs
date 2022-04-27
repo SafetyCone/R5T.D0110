@@ -13,7 +13,7 @@ namespace R5T.D0110.I001
 
 
         public ConstructorBasedSummaryFilePathProvider(
-            string summaryFilePath)
+            [NotServiceComponent] string summaryFilePath)
         {
             this.SummaryFilePath = summaryFilePath;
         }

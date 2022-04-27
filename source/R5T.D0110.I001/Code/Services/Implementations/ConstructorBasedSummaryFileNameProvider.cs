@@ -13,7 +13,7 @@ namespace R5T.D0110.I001
 
 
         public ConstructorBasedSummaryFileNameProvider(
-            string summaryFileName)
+            [NotServiceComponent] string summaryFileName)
         {
             this.SummaryFileName = summaryFileName;
         }
