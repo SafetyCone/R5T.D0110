@@ -9,7 +9,7 @@ namespace R5T.D0110.I001
     public static class IServiceActionExtensions
     {
         /// <summary>
-        /// Adds the <see cref="ConstructorBasedSummaryFileNameProvider"/> implementation of <see cref="ISummaryFileNameProvider"/> as a <see cref="ServiceLifetime.Singleton"/>.
+        /// Adds the <see cref="ConstructorBasedSummaryFileNameProvider"/> implementation of <see cref="ISummaryFileNameProvider"/> as a <see cref="Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton"/>.
         /// </summary>
         public static IServiceAction<ISummaryFileNameProvider> AddConstructorBasedSummaryFileNameProviderAction(this IServiceAction _,
             string summaryFileName)
@@ -19,7 +19,7 @@ namespace R5T.D0110.I001
         }
 
         /// <summary>
-        /// Adds the <see cref="ConstructorBasedSummaryFilePathProvider"/> implementation of <see cref="ISummaryFilePathProvider"/> as a <see cref="ServiceLifetime.Singleton"/>.
+        /// Adds the <see cref="ConstructorBasedSummaryFilePathProvider"/> implementation of <see cref="ISummaryFilePathProvider"/> as a <see cref="Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton"/>.
         /// </summary>
         public static IServiceAction<ISummaryFilePathProvider> AddConstructorBasedSummaryFilePathProviderAction(this IServiceAction _,
             string summaryFilePath)
